@@ -1,0 +1,48 @@
+//#include<bits/stdc++.h>
+#include<iostream>
+#include<cmath>
+#include<string>
+#include<iomanip>
+#include<algorithm>
+#define ll long long
+#define endl "\n"
+using namespace std;
+void fast()
+{
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+}
+string s,x;
+int t; 
+ll n,m;
+int a[100009];//1e5
+int main()
+{
+	// ^_^ 
+	fast();
+	cin >> t;
+	while (t--)
+	{
+		cin >> n >> m;
+		if (n == m)
+		{
+			if (n + m >= 4)
+				cout << (n + m) / 4 << endl;
+			else
+				cout << 0 << endl;
+		}
+		else {
+			ll ans = (n + m) / 4;
+			if ((n + m) >= 4)
+				cout << min({n, m, ans}) << endl;
+			else
+				cout << 0 << endl;
+		}
+	}
+ 
+	
+ 
+ 
+ 
+ 
+ 
+}

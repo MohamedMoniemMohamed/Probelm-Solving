@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int main()
+{
+   string a ,b;
+   int t;
+   int len;
+   cin>>t;
+   for (int i=1;i<=t;i++)
+   {
+       cin>>b;
+       len=b.length();
+       for (int k=0;k<len;k++)
+       {   if (k==0)cout<<b[0];
+ 
+           if (k%2!=0)
+           {cout<<b[k];}
+       }
+       cout<<endl;
+   }
+}
